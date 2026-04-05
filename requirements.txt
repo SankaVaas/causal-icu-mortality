@@ -1,0 +1,53 @@
+# ============================================================
+# Causal Temporal GNN for ICU Mortality Prediction
+# requirements.txt
+# Python 3.9+  |  CPU-only  |  No GPU required
+# ============================================================
+
+# ── Core deep learning ───────────────────────────────────────
+torch==2.2.2
+torchvision==0.17.2          # needed by some torch utilities
+
+# ── Graph neural networks ────────────────────────────────────
+torch-geometric==2.5.2
+torch-scatter==2.1.2
+torch-sparse==0.6.18
+
+# ── Scientific computing ─────────────────────────────────────
+numpy==1.26.4
+scipy==1.13.0
+pandas==2.2.2
+scikit-learn==1.4.2
+
+# ── Survival analysis ────────────────────────────────────────
+lifelines==0.29.0            # C-index, Kaplan-Meier, Cox baseline
+
+# ── Causal discovery ─────────────────────────────────────────
+# NOTEARS is implemented from scratch in causal/notears.py
+# (no external package needed — the full algorithm is ~80 lines)
+# Optional: use as a reference implementation
+# notears @ git+https://github.com/xunzheng/notears.git
+
+# ── Data & database ──────────────────────────────────────────
+psycopg2-binary==2.9.9       # PostgreSQL driver for MIMIC-III
+sqlalchemy==2.0.29
+tqdm==4.66.2
+
+# ── Visualisation ────────────────────────────────────────────
+matplotlib==3.8.4
+seaborn==0.13.2
+networkx==3.3                # DAG visualisation
+plotly==5.21.0               # interactive calibration / uncertainty plots
+
+# ── Notebooks ────────────────────────────────────────────────
+jupyter==1.0.0
+ipykernel==6.29.4
+ipywidgets==8.1.2
+
+# ── Experiment tracking (optional but recommended) ───────────
+# wandb==0.16.6              # uncomment to enable W&B logging
+
+# ── Utilities ────────────────────────────────────────────────
+pyyaml==6.0.1                # config files
+rich==13.7.1                 # pretty terminal output
+einops==0.7.0                # readable tensor operations in TGAT
