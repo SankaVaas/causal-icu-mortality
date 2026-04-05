@@ -31,7 +31,7 @@ lifelines==0.29.0            # C-index, Kaplan-Meier, Cox baseline
 # ── Data & database ──────────────────────────────────────────
 psycopg2-binary==2.9.9       # PostgreSQL driver for MIMIC-III
 sqlalchemy==2.0.29
-tqdm==4.66.2
+tqdm==4.66.3
 
 # ── Visualisation ────────────────────────────────────────────
 matplotlib==3.8.4
