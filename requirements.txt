@@ -5,7 +5,7 @@
 # ============================================================
 
 # ── Core deep learning ───────────────────────────────────────
-torch==2.2.2
+torch==2.8.0
 torchvision==0.17.2          # needed by some torch utilities
 
 # ── Graph neural networks ────────────────────────────────────
